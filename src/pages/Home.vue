@@ -1,14 +1,24 @@
 <template>
-    <div class="main"></div>
+    <div class="main">
+        <el-button @click="goto('/Vuex')">Vuex</el-button>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "Home"
+        name: "Home",
+        data() {
+            return {}
+        },
+        methods: {
+            goto(path) {
+                this.$router.push(path);
+            }
+        }
     }
 </script>
 
-<style scoped lang="less">
+<style lang="less">
     .main {
         width: 100%;
         height: 100%;
