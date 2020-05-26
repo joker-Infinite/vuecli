@@ -7,9 +7,9 @@ export default new Vuex.Store({
     state: {
         count: 0,
         todos: [
-            {id: 1, text: '水果类', done: true},
-            {id: 2, text: '苹果', done: true},
-            {id: 3, text: '荔枝', done: false}
+            {id: 1, text: '你', done: true},
+            {id: 2, text: '我', done: true},
+            {id: 3, text: '他', done: false}
         ],
         bankName: '中国银行'
     },
