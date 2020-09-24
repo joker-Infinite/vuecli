@@ -4,7 +4,18 @@
     </div>
 </template>
 
-<style lang="less">
+<script>
+
+    export default {
+        name: 'app',
+        components: {}
+    }
+</script>
+
+<style>
+    #app {
+    }
+
     * {
         margin: 0;
         padding: 0;
