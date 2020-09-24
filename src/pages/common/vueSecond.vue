@@ -1,5 +1,5 @@
 <template>
-    <div>我是vueSecond</div>
+    <div style="width: 1000px;height: 200px;background: #6175ff">我是vueSecond</div>
 </template>
 
 <script>
