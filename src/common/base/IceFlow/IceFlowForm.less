@@ -1,0 +1,236 @@
+
+.form-group-tools {
+    position: absolute;
+    /*    left: 10px;*/
+    top: 100px;
+    width: 126px;
+    z-index: 2;
+    .item {
+        height: 30px;
+        line-height: 30px;
+        text-align: right;
+        width: 100%;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .item:hover {
+        color: #0091b0;
+    }
+    .item.active {
+        color: #0091b0;
+    }
+}
+
+.flow-form-base {
+    /*height: 100%;*/
+    /*display: flex;*/
+    width: 100%;
+
+    .flow-form-wrapper {
+        //width: 1400px;
+        min-width: 900px;
+        min-height: calc(100% - 111px);
+        margin: auto;
+        background: white;
+        /*position: relative;*/
+
+        .operation-area {
+            padding: 5px 20px;
+            padding-bottom: 0px;
+            height: 100px;
+            position: fixed;
+            z-index: 1000;
+            flex-direction: column;
+            /*  margin-top: -100px;*/
+            background: #eef4fe;
+            box-sizing: border-box;
+            //width: 1400px;
+            min-width: 900px;
+
+            .first {
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+
+                .title {
+                    max-width: 50%;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    font-size: 24px;
+                    float: left;
+                    line-height: 50px;
+                    flex-shrink: 0;
+                    word-break: keep-all; /* 不换行 */
+                    white-space: nowrap; /* 不换行 */
+                    overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+                    text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+                    .secret {
+                        color: red;
+                        font-size: 16px;
+                        height: 20px;
+                        margin-top: -29px;
+                        position: absolute;
+                    }
+                }
+
+                .button-group {
+                    position: absolute;
+                    z-index: 10;
+                    right: 0;
+                    width: 100%;
+                    display: flex;
+                    margin-top: 10px;
+                    box-sizing: border-box;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    flex-grow: 1;
+                    max-height: 80px;
+                    /*overflow: hidden;*/
+
+                    .el-button {
+                        margin-bottom: 2px;
+                    }
+
+                    .invalid {
+                        position: absolute;
+                        bottom: -30px;
+                        height: 30px;
+                        line-height: 30px;
+                        color: red;
+                        width: 300px;
+                        right: 0px;
+                        text-align: center;
+                        z-index: 1;
+                        font-size: 14px;
+
+                    }
+                    .invalid.enhance {
+                        animation-name: invalid-message;
+                        animation-duration: 0.15s;
+                        animation-delay: 0s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+
+            .second {
+                margin-top: 5px
+            }
+        }
+
+        .form-content {
+            //width: 1400px;
+            display: flex;
+            min-width: 900px;
+            padding-top: 100px;
+            height: 100%;
+            background: white;
+
+            .form-content-wrapper {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1299px) {
+    .flow-form-wrapper {
+        width: 1000px;
+
+        .operation-area {
+            width: 1000px;
+        }
+
+        .form-content {
+            width: 1000px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .flow-form-wrapper {
+        width: 1000px;
+
+        .operation-area {
+            width: 1000px;
+        }
+
+        .form-content {
+            width: 1000px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .flow-form-wrapper {
+        width: 1100px;
+
+        .operation-area {
+            width: 1100px;
+        }
+
+        .form-content {
+            width: 1100px;
+        }
+    }
+}
+
+.shr-area {
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 0 40px;
+
+    .shr {
+        font-size: 20px;
+    }
+
+    .shyj {
+        margin-top: 20px;
+        margin-left: 70px;
+        list-style: none;
+        min-height: 300px;
+
+        /*li {
+            margin: 15px;
+        }*/
+    }
+}
+
+.flow-pic {
+    height: 600px;
+    display: flex;
+
+    img {
+        max-width: 600px;
+        max-height: 700px;
+    }
+
+    .remark {
+        box-sizing: border-box;
+        padding: 5px;
+        width: 300px;
+        color: #a94442;
+
+        .title {
+            font-size: 20px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.tag {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.flow_description {
+    span {
+        display: block;
+    }
+}

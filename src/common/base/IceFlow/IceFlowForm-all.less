@@ -1,0 +1,69 @@
+.flow-form-base {
+    .flow-form-wrapper {
+        .operation-area {
+            .el-tabs--border-card {
+                border: none;
+                box-shadow: none;
+
+                .el-tabs__content {
+                    display: none;
+                }
+            }
+            .el-tabs--border-card > .el-tabs__header {
+                background: #eef4fe;
+            }
+            .el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
+                border: 1px solid #dcdfe6;
+                border-bottom: none;
+            }
+
+            .el-tabs--border-card > .el-tabs__header .el-tabs__item {
+                margin: 0;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+
+            @keyframes invalid-message {
+                0% {
+                    transform: translate(0px, 0px);
+                }
+                25% {
+                    transform: translate(2px, 0px);
+                }
+                50% {
+                    transform: translate(5px, 0px);
+                }
+                75% {
+                    transform: translate(2px, 0px);
+                }
+                100% {
+                    transform: translate(0px, 0px);
+                }
+            }
+        }
+    }
+
+    .customDialog {
+        //background: red;
+
+        .el-dialog__body {
+            padding: 4px;
+            padding-top: 0;
+        }
+    }
+
+    .operate-button {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.form-group-tools {
+    .el-tabs__header.is-right {
+        width: 100%;
+    }
+    .el-tabs__item {
+        padding: 0;
+        padding-left: 10px;
+    }
+}

@@ -5,7 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "express": "vue-cli-service express:watch",
+    "express:run": "vue-cli-service express:run",
+    "redis-deploy": "vue-cli-service redis-deploy"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -25,6 +28,8 @@
     "less-loader": "^5.0.0",
     "vue-cli-plugin-axios": "0.0.4",
     "vue-cli-plugin-element": "^1.0.1",
+    "vue-cli-plugin-express": "^1.0.2",
+    "vue-cli-plugin-redis-deploy": "0.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
